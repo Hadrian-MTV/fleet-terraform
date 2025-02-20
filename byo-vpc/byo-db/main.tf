@@ -23,6 +23,7 @@ module "ecs" {
   fleet_config     = local.fleet_config
   migration_config = var.migration_config
   vpc_id           = var.vpc_id
+  partition        = var.partition
 }
 
 module "cluster" {

@@ -83,3 +83,7 @@ variable "alb_config" {
   })
 }
 
+variable "partition" {
+  type = string
+  default = "aws"
+}

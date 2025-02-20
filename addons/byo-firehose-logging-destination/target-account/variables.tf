@@ -63,3 +63,8 @@ variable "kms_key_arn" {
   type        = string
   default     = ""
 }
+
+variable "partition" {
+  type = string
+  default = "aws"
+}

@@ -312,3 +312,8 @@ variable "alb_config" {
     idle_timeout         = optional(number, 905)
   })
 }
+
+variable "partition" {
+  type = string
+  default = "aws"
+}

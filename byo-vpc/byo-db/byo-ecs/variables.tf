@@ -207,3 +207,8 @@ variable "migration_config" {
   description = "The configuration object for Fleet's migration task."
   nullable    = false
 }
+
+variable "partition" {
+  type = string
+  default = "aws"
+}

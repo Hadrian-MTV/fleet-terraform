@@ -13,3 +13,8 @@ variable "sts_external_id" {
   description = "Optional unique identifier that can be used by the principal assuming the role to assert its identity."
   default     = ""
 }
+
+variable "partition" {
+  type = string
+  default = "aws"
+}

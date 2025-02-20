@@ -456,3 +456,8 @@ variable "alb_config" {
   })
   default = {}
 }
+
+variable "partition" {
+  type = string
+  default = "aws"
+}

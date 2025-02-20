@@ -8,7 +8,7 @@ data "aws_iam_policy_document" "kms_key_policy" {
     resources = ["*"]
     principals {
       type        = "AWS"
-      identifiers = ["arn:aws:iam::${data.aws_caller_identity.current.account_id}:root"]
+      identifiers = ["arn:${var.partition}:iam::${data.aws_caller_identity.current.account_id}:root"]
     }
   }
 }

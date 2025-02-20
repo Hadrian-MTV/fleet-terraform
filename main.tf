@@ -56,4 +56,5 @@ module "byo-vpc" {
   })
   ecs_cluster  = var.ecs_cluster
   fleet_config = var.fleet_config
+  partition    = var.partition
 }

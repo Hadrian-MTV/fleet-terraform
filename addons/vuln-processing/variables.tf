@@ -126,3 +126,8 @@ variable "fleet_config" {
 variable "efs_root_directory" {
   default = "/"
 }
+
+variable "partition" {
+  type = string
+  default = "aws"
+}

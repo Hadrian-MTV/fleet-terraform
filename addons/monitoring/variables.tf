@@ -83,3 +83,8 @@ variable "cron_monitoring" {
   })
   default = null
 }
+
+variable "partition" {
+  type = string
+  default = "aws"
+}

@@ -117,11 +117,11 @@ resource "aws_iam_role_policy_attachment" "run_cloudwatch" {
 
 resource "aws_iam_role_policy_attachment" "ecs_role_attachment" {
   role       = aws_iam_role.execution.name
-  policy_arn = "arn:aws:iam::aws:policy/service-role/AmazonEC2ContainerServiceRole"
+  policy_arn = "arn:${var.partition}:iam::aws:policy/service-role/AmazonEC2ContainerServiceRole"
 }
 
 resource "aws_iam_role_policy_attachment" "ecs_task" {
-  policy_arn = "arn:aws:iam::aws:policy/service-role/AmazonEC2ContainerServiceEventsRole"
+  policy_arn = "arn:${var.partition}:iam::aws:policy/service-role/AmazonEC2ContainerServiceEventsRole"
   role       = aws_iam_role.execution.name
 }
 

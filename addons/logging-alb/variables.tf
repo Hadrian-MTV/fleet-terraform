@@ -42,3 +42,8 @@ variable "extra_s3_athena_policies" {
   type    = list(any)
   default = []
 }
+
+variable "partition" {
+  type = string
+  default = "aws"
+}
