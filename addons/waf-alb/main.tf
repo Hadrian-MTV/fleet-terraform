@@ -119,9 +119,6 @@ resource "aws_wafv2_rule_group" "allowed" {
     metric_name                = var.name
     sampled_requests_enabled   = false
   }
-  lifecycle {
-    create_before_destroy = true
-  }
 }
 
 resource "aws_wafv2_web_acl" "main" {
